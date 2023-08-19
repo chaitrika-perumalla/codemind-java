@@ -1,15 +1,16 @@
 import java.util.Scanner;
-public class sum{
+public class Solution{
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
-        int n,sum=0;
-        n=sc.nextInt();
-        int a[]=new int[n];
+        int n=sc.nextInt();
+        //array declaration
+        int[]intArray=new int[n];
         for(int i=0;i<n;i++){
-            a[i]=sc.nextInt();
+            intArray[i]=sc.nextInt();
         }
-        for(int i=0;i<n;i++){
-            sum=sum+a[i];
+        int sum=0;
+        for(int eachElement: intArray){
+            sum+=eachElement;
         }
         System.out.println(sum);
     }
