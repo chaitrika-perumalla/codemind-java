@@ -1,5 +1,5 @@
 import java.util.Scanner;
- public class rough
+public class rough
 {
     public static void main(String args[])
     {
